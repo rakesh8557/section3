@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+#    active: native  # only when the class path or file means inside the same machine or directory
+    active: git
+  cloud:
+    config:
+      server:
+#        native:
+#          search-locations: "classpath:/config"
+#          search-locations: "file:///C://Users//Lenovo//Documents//config"
+        git:
+          uri: "https://github.com/rakesh8557/accounts_loans_config"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+#          hostKey: "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg="
+#          hostKeyAlgorithm: ecdsa-sha2-nistp256
+#          privateKey: |
+#            -----BEGIN OPENSSH PRIVATE KEY-----
+#            b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+#            QyNTUxOQAAACDZc/2bizpydix9tmzYOVuYo/QU+jZw3Mus6MONfvQaZwAAAJhh8oyHYfKM
+#            hwAAAAtzc2gtZWQyNTUxOQAAACDZc/2bizpydix9tmzYOVuYo/QU+jZw3Mus6MONfvQaZw
+#            AAAEBff7rdocs70kN57fr+NULS04321uj7tRjL/MiJR2zcM9lz/ZuLOnJ2LH22bNg5W5ij
+#            9BT6NnDcy6zow41+9BpnAAAAEnJyOTA4NjU0QGdtYWlsLmNvbQECAw==
+#            -----END OPENSSH PRIVATE KEY-----
+
+server:
+  port: 8071
+
+encrypt:
+  key: "FHVGIRBI34BTIB4R84GB"
+
+#logging:
+#  level:
+#    org.eclipse.jgit: DEBUG
+#    org.apache.sshd: DEBUG

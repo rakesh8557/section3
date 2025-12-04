@@ -1,0 +1,11 @@
+build:
+  version: "4.0"
+
+loans:
+  message: "Welcome to Guts bank Loans Prod APIs"
+  email_name:
+    name: "Smith - Product Owner"
+    email: "smith@gmail.com"
+  mobile_number:
+    - (333)543-4546
+    - (333)345-5644

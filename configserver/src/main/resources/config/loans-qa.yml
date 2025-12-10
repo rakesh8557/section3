@@ -1,5 +1,5 @@
 build:
-  version: "3.0"
+  version: "2.0"
 
 loans:
   message: "Welcome to Guts bank Loans QA APIs"
